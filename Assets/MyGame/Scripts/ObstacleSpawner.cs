@@ -4,13 +4,9 @@ using UnityEngine;
 public class ObstacleSpawner : MonoBehaviour
 {
     public static ObstacleSpawner instance;
-
     public GameObject[] obstacles;
-
     public bool gameOver = false;
-
     public float minSpawnTime, maxSpawnTime;
-
 
     private void Awake()
     {
@@ -24,12 +20,6 @@ public class ObstacleSpawner : MonoBehaviour
     void Start()
     {
         StartCoroutine("Spawn");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator Spawn()
