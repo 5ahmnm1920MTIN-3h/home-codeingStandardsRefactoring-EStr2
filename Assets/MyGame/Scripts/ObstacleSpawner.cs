@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
@@ -42,9 +41,8 @@ public class ObstacleSpawner : MonoBehaviour
         while (!gameOver)
         {
             SpawnObstacle();
-            
-            waitTime = Random.Range(minSpawnTime,maxSpawnTime);
 
+            waitTime = Random.Range(minSpawnTime,maxSpawnTime);
             yield return new WaitForSeconds(waitTime);
         }
     }
@@ -52,7 +50,6 @@ public class ObstacleSpawner : MonoBehaviour
     void SpawnObstacle()
     {
         int random = Random.Range(0,obstacles.Length);
-
         Instantiate(obstacles[random],transform.position,Quaternion.identity);
     }
 }

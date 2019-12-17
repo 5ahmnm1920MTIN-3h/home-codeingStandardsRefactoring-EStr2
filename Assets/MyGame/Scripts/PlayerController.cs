@@ -1,13 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
     Animator anim, anim2, anim3, anim4, anim5;
     [SerializeField] float jumpForce;
-    
 
     private void Awake()
     {
@@ -30,10 +27,6 @@ public class PlayerController : MonoBehaviour
             {
                 jump();
             }
-
-
-
-
         }
     }
 
@@ -43,9 +36,7 @@ public class PlayerController : MonoBehaviour
     void jump()
     {
         grounded = false;
-
         rb.velocity = Vector2.up * jumpForce;
-
         anim.SetTrigger("Jump");
 
         GameManager.instance.IncrementScore();
@@ -72,8 +63,4 @@ public class PlayerController : MonoBehaviour
             gameOver = SetGameOverTrue();
         }
     }
-
-
-
-
 }
