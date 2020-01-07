@@ -5,7 +5,7 @@ This is a simple 2D side-scroll game. The Santa runs from left to right and has 
 The game ends when the Santa hits an obstacle.  The goal is to avoid as many obstacles as possible.
 
 ### Development platform: 
-Windows 10, Unity version 2019.1.14f1, Visual Studio Community 2017, Scripting Runtime Version: .NET 4.0
+macOS Mojave, Unity version 2019.1.14f1, Visual Studio Community 2017 for Mac, Scripting Runtime Version: .NET 4.0
 
 ### Target platform: 
 WebGl and Standalone, RefRes: 1920 * 1080
@@ -39,12 +39,9 @@ Refactoring needed:
 * del not used namespaces
 * del unused variables
 * del needless debugs
-* del needless comments
-* del unused methods
 * rename variables (coding standards)
 * rename methods (coding standards)
 * fix poor conditional clauses
-* fix poor formating
 * replace magic string
 * replace magic number
 
@@ -60,6 +57,7 @@ Only one level is implemented.
 * Use the singelton pattern
 * Spawn objects
 * Use UI elements and manipulate UI elements with scrips
+* How much harder it is to refacture another persons code
 
 
-Copyright by smeerws
+Copyright by Stranze
